@@ -96,7 +96,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/controller',
     name: 'ControllerDashboard',
-    component: () => import('@/pages/controller/ControllerDashboard.vue'),
+    component: () => import('@/pages/Controller/MainController.vue'),
     meta: { requiresAuth: true, roles: ['controller'], layout: 'controller' },
   },
   {
