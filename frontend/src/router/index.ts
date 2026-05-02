@@ -96,7 +96,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/controller',
     name: 'ControllerDashboard',
-    component: () => import('@/pages/controller/MainController.vue'),
+    component: () => import('@/pages/controller/ControllerDashboard.vue'),
     meta: { requiresAuth: true, roles: ['controller'], layout: 'controller' },
   },
   {
@@ -145,13 +145,13 @@ router.beforeEach(async (to, from, next) => {
   // }
 
   // 1. Проверка авторизации
-  if (to.meta.requiresAuth && !isAuthenticated()) {
-    return next({ path: '/login', query: { redirect: to.fullPath } })
-  }
-  // 2. Проверка ролей
-  if (to.meta.roles && !to.meta.roles.includes(userStore.userRole)) {
-   return next('/access-denied')
-  }
+  // if (to.meta.requiresAuth && !isAuthenticated()) {
+  //   return next({ path: '/login', query: { redirect: to.fullPath } })
+  // }
+  // // 2. Проверка ролей
+  // if (to.meta.roles && !to.meta.roles.includes(userStore.userRole)) {
+  //  return next('/access-denied')
+  // }
 
 
   next()
