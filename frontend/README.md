@@ -10,8 +10,10 @@ This is the **frontend** of **Ticketing System**, a web application for purchasi
 - [Pinia](https://pinia.vuejs.org/) — state management
 - [Tailwind CSS](https://tailwindcss.com/) — utility-first CSS framework
 
-## 🚀 Getting Started
+## Here you can check the RESULT : https://ticket-hub-orcin.vercel.app/ 🚀🚀🚀
 
+## 🚀 Getting Started
+> 
 > Make sure you have [Node.js](https://nodejs.org/) (v18+) and [npm](https://www.npmjs.com/) installed.
 
 ### 1. Clone the repository (if not done yet):
